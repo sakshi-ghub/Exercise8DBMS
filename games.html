@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>GAMES- PHP/MySQL Demo Code</title>
+</head>
+
+<body>
+<fieldset>
+  <legend>Insert Game</legend>
+  <form name="GameInsert" method="post" action="g_insert.php">
+    <p>
+      <label for="games_id">Game ID </label>
+      <input type="number" name="games_id" id="games_id" placeholder="Enter your game ID."/>
+    </p>
+    <p>
+      <label for="games_year">Year</label>
+      <input type="year" name="games_year" id="games_year" placeholder="Enter year."/>
+    </p>
+    <p>
+      <label for="games_name">Name of the game </label>
+      <input type="text" name="games_name" id="games_name" placeholder="Enter name of the game."/>
+    </p>
+    <p>
+    	<label for="season">Season </label>
+	<input type="text" id="season" name="season" placeholder="Enter season name." /><br>
+    </p>
+    <p>
+      <input type="submit" name="Submit" id="Submit" value="Submit">
+	<input type="reset" name="Reset" id="Reset" value="Reset">
+    </p>
+  </form>
+</fieldset>
+<fieldset>
+<legend>Delete Game</legend>
+<form name="GameDelete" method="post" action="g_delete.php">
+    <p>
+      <label for="games_id">Game ID </label>
+      <input type="number" name="games_id" id="games_id" placeholder="Enter ID to be deleted" required/>
+    </p>
+      <input type="submit" name="Submit" id="Submit" value="Submit">
+	<input type="reset" name="Reset" id="Reset" value="Reset">
+    </p>
+  </form>
+</fieldset>
+<fieldset>
+<legend>Search Game</legend>
+<form name="GameSearch" method="post" action="g_search.php">
+    <p>
+      <label for="games_id">Game ID </label>
+      <input type="number" name="games_id" id="games_id" placeholder="Enter ID to be searched" required/>
+    </p>
+
+      <input type="submit" name="Submit" id="Submit" value="Submit">
+	<input type="reset" name="Reset" id="Reset" value="Reset"></form></p>
+  </form>
+</fieldset>
+<fieldset>
+  <legend>Update Game</legend>
+  <form name="GameInsert" method="post" action="g_update.php">
+    <p>
+      <label for="games_id">Game ID </label>
+      <input type="number" name="games_id" id="games_id" placeholder="Enter your game ID." required/>
+    </p>
+    <p>
+      <label for="games_year">Year</label>
+      <input type="year" name="games_year" id="games_year" placeholder="Enter year."/>
+    </p>
+    <p>
+      <label for="games_name">Name of the game </label>
+      <input type="text" name="games_name" id="games_name" placeholder="Enter name of the game."/>
+    </p>
+    <p>
+    	<label for="season">Season </label>
+	<input type="text" id="season" name="season" placeholder="Enter season name." /><br>
+    </p>
+    <p>
+      <input type="submit" name="Submit" id="Submit" value="Submit">
+	<input type="reset" name="Reset" id="Reset" value="Reset">
+    </p>
+  </form>
+</fieldset>
+</body>
+</html>

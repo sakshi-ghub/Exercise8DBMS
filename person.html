@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Person- PHP/MySQL Demo Code</title>
+</head>
+
+<body>
+<fieldset>
+  <legend>Insert Person</legend>
+  <form name="PersonInsert" method="post" action="p_insert.php">
+    <p>
+      <label for="person_id">Person ID </label>
+      <input type="number" name="person_id" id="person_id" placeholder="Enter your ID."/>
+    </p>
+    <p>
+      <label for="full_name">Full Name </label>
+      <input type="text" name="full_name" id="full_name" placeholder="Enter your full name."/>
+    </p>
+    <p>
+    	<label for="height">Height (in feet) </label>
+	<input type="number" id="height" step="0.01" name="height"placeholder="Enter your height in feet." /><br>
+    </p>
+    <p>
+        <label for="weight">Weight (in kg)</label>
+	<input type="number" id="weight" name="weight" step="0.01" placeholder="Enter your weight in kg." /><br>
+    </p>
+    <p>
+	      <label for="gender">Gender</label>
+        <input type="text" name="gender" id="gender" placeholder="Gender(Male/Female/Others">
+    <p>
+      <input type="submit" name="Submit" id="Submit" value="Submit">
+	<input type="reset" name="Reset" id="Reset" value="Reset">
+    </p>
+  </form>
+</fieldset>
+<fieldset>
+<legend>Delete Person</legend>
+<form name="PersonDelete" method="post" action="p_delete.php">
+    <p>
+      <label for="person_id">Person ID </label>
+      <input type="number" name="person_id" id="person_id" placeholder="Enter ID to be deleted" required/>
+    </p>
+      <input type="submit" name="Submit" id="Submit" value="Submit">
+	<input type="reset" name="Reset" id="Reset" value="Reset">
+    </p>
+  </form>
+</fieldset>
+<fieldset>
+<legend>Search Person</legend>
+<form name="PersonSearch" method="post" action="p_search.php">
+    <p>
+      <label for="person_id">Person ID </label>
+      <input type="number" name="person_id" id="person_id" placeholder="Enter ID to be searched" required/>
+    </p>
+      <input type="submit" name="Submit" id="Submit" value="Submit">
+	<input type="reset" name="Reset" id="Reset" value="Reset">
+    </p>
+  </form>
+</fieldset>
+<fieldset>
+  <legend>Update Person</legend>
+  <form name="PersonUpdate" method="post" action="p_update.php">
+    <p>
+      <label for="person_id">Person ID </label>
+      <input type="number" name="person_id" id="person_id" placeholder="Enter your ID." required/>
+    </p>
+    <p>
+      <label for="full_name">Full Name </label>
+      <input type="text" name="full_name" id="full_name" placeholder="Enter your full name."/>
+    </p>
+    <p>
+    	<label for="height">Height (in feet) </label>
+	<input type="number" id="height" step="0.01" name="height"placeholder="Enter your height in feet." /><br>
+    </p>
+    <p>
+        <label for="weight">Weight (in kg)</label>
+	<input type="number" id="weight" name="weight" step="0.01" placeholder="Enter your weight in kg." /><br>
+    </p>
+    <p>
+	 <label for="gender">Gender</label>
+    	 <input type="text" name="gender" id="gender" placeholder="Gender(Male/Female/Others">
+    <p>
+      <input type="submit" name="Submit" id="Submit" value="Submit">
+	<input type="reset" name="Reset" id="Reset" value="Reset">
+    </p>
+  </form>
+</fieldset>
+</body>
+</html>
